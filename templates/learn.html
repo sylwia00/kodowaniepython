@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="box">  
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align:center">Nauka</h1>
+        <br>
+        <br>
+        <form style="text-align:center" action="" method="post">
+        
+            {{ form.csrf_token() }}
+                
+            <h5><b>{{form.my_learn.label}}</b></h5>
+            <p>{{form.my_learn}}</p>
+                
+            <p>{{form.button}}</p>
+
+        </form>
+    </div>
+
+{% endblock %}
